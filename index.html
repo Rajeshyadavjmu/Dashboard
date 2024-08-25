@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos_SalesCode.AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header  -->
+        <div id="header">
+            <div class="search">
+                <input type="text" class="search-bar" name="" value="" placeholder="Search...">
+            </div>
+
+            <div class="profile-and-theme">
+                <div class="moon">
+                    <i class="fa fa-moon"></i>
+                </div>
+
+                <div class="profile-container">
+                    
+                    <label for="toggle"><div class="profile"><i class="fa fa-user"></i></div></label>
+                    <input type="checkbox" id="toggle" style="display: none;">
+                    <div class="profile-settings">
+                       <div>
+                         <div class="profile-picture">
+                            <i class="fa fa-user"></i>
+                         </div>
+                         <h3 class="profile-name">Jerry Senifield</h3>
+                         <input type="text" class="profile-status" placeholder="Update your status">
+                         <div class="profile-settings-icons">
+                            <i class="fas fa-user"></i>
+                            <p class="profile-profile"> Profile</p>
+                         </div>
+                         <div class="profile-settings-icons">
+                            <i class="fas fa-tachometer-alt dashboard-icon"></i>
+                            <p>Dashboard</p>
+                         </div>
+                         <div class="profile-settings-icons">
+                            <i class="fas fa-lock"></i>
+                            <p>Posts & Activity</p>
+                         </div>
+                         <div class="profile-settings-icons">
+                            <i class="fas fa-cog"></i>
+                            <p>Settings & Privacy</p>
+                         </div>
+                         <div class="profile-settings-icons">
+                            <i class="fas fa-question-circle"></i>
+                            <p>Help Center</p>
+                         </div>
+                         <div class="horizontal-line">
+                            <!-- horizontal-line -->
+                         </div>
+                         <div class="profile-settings-icons, add-another-account">
+                            <i class="fas fa-user-plus"></i>
+                            <p>Add another account</p>
+                         </div>
+                         <div class="horizontal-line">
+                            <!-- horizontal-line -->
+                         </div>
+                         <div class="profile-settings-icons, profile-sign-out">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <p>Sign out</p>
+                         </div>
+                         <div class="profile-settings-icons, profile-terms-cookies">
+                            <p>Privacy policy</p>
+                            <div class="profile-privacy-dot"></div>
+                            <p>Terms</p>
+                            <div class="profile-privacy-dot"></div>
+                            <p>Cookies</p>
+                         </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="horizontal-line">
+        </div>
+
+        <!-- Page Body  -->
+        <div id="body-content">
+            <!-- Sidebar  -->
+            <div id="sidebar">
+                <div class="timer-icon">
+                    <i class="fa fa-sort-down"></i>
+                    <i class="fa fa-stopwatch"></i>
+                    <div class="home-button"> Home </div>
+                </div>
+                <ol class="home1">
+                    <li>
+                        <p class="grey-text">E Commerce</p>
+                    </li>
+                    <li>
+                        <p>Project management</p>
+                    </li>
+                    <li>
+                        <p class="grey-text">CRM</p>
+                    </li>
+                    <li>
+                        <div class="travel-agency">
+                            <p class="grey-text">Travel agency</p>
+                            <p class="new-button">New</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="grey-text">Social feed</p>
+                    </li>
+                </ol>
+
+                <p class="apps" class="grey-text">APPS</p>
+
+                <ol class="home2">
+                    <li class="grey-text">
+                        <div class="ecommerce-div">
+                            <div>
+                                <i class="fa fa-sort-down rotated-right"></i>
+                                <i class="fa fa-shopping-cart"></i>
+                            </div> 
+                            <div>
+                                <p class="ecommerce-para">E commerce</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="grey-text">
+                        <div class="ecommerce-div">
+                            <div>
+                                <i class="fa fa-sort-down rotated-right"></i>
+                            <i class="fa fa-phone"></i>
+                            </div> 
+                            <div>
+                                                        
+                            <p class="ecommerce-para">CRM</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="grey-text">
+                        <div class="ecommerce-div">
+                            <div>
+                                <i class="fa fa-sort-down rotated-right"></i>
+                            <i class="fa fa-project-diagram"></i>
+                            </div>
+                             <div>
+                                <p class="ecommerce-para">Project Mgmt.</p>
+                             </div>
+                        </div>
+                    </li>
+                    <li class="grey-text">
+                        <div class="ecommerce-div">
+                            <div>
+                                <i class="fa fa-sort-down rotated-right"></i>
+                            <i class="fa fa-globe"></i>
+                            </div>
+                            <div>
+                                <p class="ecommerce-para"> Travel agency</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="grey-text, chat-sidebar">
+                        <div class="chat-sidebar-div">
+                            <i class="fa fa-comments"></i> 
+                            <p class="chat-sidebar-para">Chat</p>
+                        </div>
+                    </li>
+                    <li class="grey-text">
+                        <div class="ecommerce-div">
+                            <div >
+                                <i class="fa fa-sort-down rotated-right"></i>
+                            <i class="fa fa-envelope"></i>
+                            </div>
+                             <div>
+                                <p class="ecommerce-para">Email</p>
+                             </div>
+                        </div>
+                    </li>
+                    <li class="grey-text">
+                        <div class="ecommerce-div">
+                            <div>
+                                <i class="fa fa-sort-down rotated-right"></i>
+                            <i class="fa fa-calendar-alt"></i>
+                            </div>
+                             <div class="ecommerce-para">Events</div>
+                        </div>
+                    </li>
+                    <li class="grey-text">
+                        <div class="ecommerce-div">
+                            <div>
+                                <i class="fa fa-sort-down rotated-right"></i>
+                            <i class="fa fa-columns"></i>
+                            </div> 
+                            <div><p class="ecommerce-para">Kanban</p></div>
+                        </div>
+                    </li>
+                    <li class="grey-text">
+                        <div class="ecommerce-div">
+                            <div>
+                                <i class="fa fa-sort-down rotated-right"></i>
+                            <i class="fa fa-share-alt"></i>
+                            </div> 
+                            <div><p class="ecommerce-para">Social</p></div>
+                        </div>
+                    </li>
+                    <li class="grey-text, chat-sidebar">
+                        <div class="chat-sidebar-div">
+                            <i class="fa fa-calendar"></i>
+                            <p class="chat-sidebar-para">Calender</p>
+                        </div>
+                    </li>
+                </ol>
+
+                <div class="horizontal-line">
+                </div>
+
+                <div class="collapsed-view" class="grey-text">
+                    <i class="fa fa-chevron-left"></i>
+                    <p>Collapsed View</p>
+                </div>
+            </div>
+
+            <div class="vertical-line-me">
+            </div>
+
+            <!-- Main-Content  -->
+            <div id="main-content">
+                <!-- Header Content  -->
+                <div class="header-content">
+                    <div class="project-dashboard">
+                        <h1>Project Dashboard</h1>
+                        <p class="grey-text, whats-going-on">Here’s what’s going on at your business right now</p>
+                    </div>
+                    <div class="march">
+                        <i class="fa fa-calendar-alt"></i>
+                        <input type="text" class="march-input" placeholder="Mar 1, 2022">
+                        <!-- <label for="search">Mar 1, 2022</label><br> -->
+                    </div>
+                </div>
+
+                <!-- Header-Stats -->
+                <div class="header-stats">
+                    <div class="stat">
+                        <div class="header-stat-icon"><i class="fa fa-file-alt fa-4x"></i></div>
+                        <div>
+                            <div class="stat-upper">
+                                <h2>32</h2>
+                                <h3 class="header-stat-data">Projects</h3>
+                            </div>
+                            <div>
+                                <p class="grey-text">Awaiting Processing</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="header-stat-icon"><i class="fa fa-user-group fa-4x"></i></div>
+                        <div>
+                            <div class="stat-upper">
+                                <h2>94</h2>
+                                <h3 class="header-stat-data">Members</h3>
+                            </div>
+                            <div>
+                                <p class="grey-text">Working hard</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="header-stat-icon"><i class="fa fa-receipt fa-4x"></i></div>
+                        <div>
+                            <div class="stat-upper">
+                                <h2>23</h2>
+                                <h3 class="header-stat-data">Invoices</h3>
+                            </div>
+                            <div>
+                                <p class="grey-text">Soon to be cleared</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="header-stat-icon"><i class="fa fa-money-bill-wave fa-4x"></i></div>
+                        <div>
+                            <div class="stat-upper">
+                                <h2>3</h2>
+                                <h3 class="header-stat-data">Refunds</h3>
+                            </div>
+                            <div>
+                                <p class="grey-text">Fresh start</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lorem  -->
+                <div id="pie-chart">
+                    <section class="roadmap">
+                        <div class="project-zero-roadmap">
+                          <h2>Project: zero Roadmap</h2>
+                          <p class="grey-color-phase">Phase 2 is now ongoing</p>
+                        </div>
+                        <!-- gantt chart  -->
+                        <div class="ghantt-chart">
+                            <div class="switch-container">
+                                <div>
+                                    <span class="c">Progress</span>
+                                    <input type="checkbox" class="form-check-input" checked>
+                                </div>
+                                <div>
+                                    <span class="switch-label">Links</span>
+                                    <input type="checkbox" class="form-check-input" checked>
+                                </div>
+                            </div>
+                            
+                            <div class="gantt-container">
+                                <div class="btn-group">
+                                    <button type="button" class="btn active">Week</button>
+                                    <button type="button" class="btn">Month</button>
+                                    <button type="button" class="btn">Year</button>
+                                </div>
+                    
+                                <div class="vertical-lines">
+                                    <div class="vertical-line" style="left: 20%;"></div>
+                                    <div class="vertical-line" style="left: 40%;"></div>
+                                    <div class="vertical-line" style="left: 60%;"></div>
+                                    <div class="vertical-line" style="left: 80%;"></div>
+                                    <div class="vertical-line" style="left: 100%;"></div>
+                                </div>
+                    
+                                <div class="gantt-row">
+                                    <div class="gantt-label">Planning</div>
+                                    <div class="gantt-bar-container">
+                                        <div class="gantt-bar bar-planning"></div>
+                                    </div>
+                                </div>
+                                <div class="gantt-row">
+                                    <div class="gantt-label">Research</div>
+                                    <div class="gantt-bar-container">
+                                        <div class="gantt-bar bar-research"></div>
+                                    </div>
+                                </div>
+                                <div class="gantt-row">
+                                    <div class="gantt-label">Design</div>
+                                    <div class="gantt-bar-container">
+                                        <div class="gantt-bar bar-design"></div>
+                                    </div>
+                                </div>
+                                <div class="gantt-row">
+                                    <div class="gantt-label">Review</div>
+                                    <div class="gantt-bar-container">
+                                        <div class="gantt-bar bar-review"></div>
+                                    </div>
+                                </div>
+                                <div class="gantt-row">
+                                    <div class="gantt-label">Develop</div>
+                                    <div class="gantt-bar-container">
+                                        <div class="gantt-bar bar-develop"></div>
+                                    </div>
+                                </div>
+                                <div class="gantt-row">
+                                    <div class="gantt-label">Review II</div>
+                                    <div class="gantt-bar-container">
+                                        <div class="gantt-bar bar-review-ii"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="info-box">
+                        <div class="coming-soon">COMING SOON</div>
+                        <h2 class="what-is-lorem">What is Lorem Ipsum?</h2>
+                        <p class="color-lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione temporibus molestiae,
+                            incidunt et atque, enim omnis debitis eum inventore non,  culpa Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Nostrum saepe cum nesciunt itaque magni, cumque
+                            officia vitae accusamus Ashish Agarwal alias doloribus, porro perferendis soluta obcaecati culpa illum vero
+                            reiciendis cupiditate. Sequi?repudiandae quis illum facere ducimus dignissimos blanditiis
+                            quibusdam quas porro voluptatibus? Iusto esse natus at officia? Fugiat laborum voluptatem
+                            earum accusantium possimus placeat eligendi omnis animi minima, quam expedita veritatis,
+                            officiis ad itaque magni, sit ab sunt recusandae neque dolor enim! Culpa amet tempora autem
+                            ut, similique voluptatibus modi</p>
+                    </section>
+                </div>
+
+                <div class="horizontal-line">
+                </div>
+
+                <!-- Issues-Discovered  -->
+                <div id="graph-chart">
+                    <div class="issues">
+                        <div>
+                            <div>
+                                <h2 class="issues2">Issues Discovered</h2>
+                                <p class="newly-found">Newly found and yet to be solved</p>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th class="table-head">Issue type</th>
+                                        <th>Total Count 257</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="development"><div class="box-color5"></div>Product design</td>
+                                        <td>63</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="development"><div class="box-color1"></div>Development</td>
+                                        <td>63</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="development"><div class="box-color2"></div>QA & Testing</td>
+                                        <td>56</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="development"><div class="box-color3"></div>Customer queries</td>
+                                        <td>36</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="development"><div class="box-color4"></div>R & D</td>
+                                        <td>24</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="see-details2">
+                                <p class="see-details">See Details ></p>
+                            </div>
+                        </div>
+                        <div class="chart-container"></div>
+                    </div>
+                    <div class="eleven">
+                        <div>
+                            <h2>Project: eleven Progress</h2>
+                            <p class="deadline-progress">Deadline & progress</p>
+                        </div>
+                        <div class=big-chart>
+                            <canvas id="lineChart"></canvas>
+                            <script>
+                                const ctx = document.getElementById('lineChart').getContext('2d');
+                                const lineChart = new Chart(ctx, {
+                                    type: 'line',
+                                    data: {
+                                        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                                        datasets: [
+                                            {
+                                                label: 'Orange Line',
+                                                data: [65, 59, 80, 81, 56, 55, 40],
+                                                borderColor: 'orange',
+                                                fill: false
+                                            },
+                                            {
+                                                label: 'Blue Line',
+                                                data: [28, 48, 40, 19, 86, 27, 90],
+                                                borderColor: 'blue',
+                                                fill: false
+                                            },
+                                            {
+                                                label: 'Green Line',
+                                                data: [45, 25, 16, 36, 67, 18, 76],
+                                                borderColor: 'green',
+                                                fill: false
+                                            }
+                                        ]
+                                    },
+                                    // options: {
+                                    //     responsive: true,
+                                    //     plugins: {
+                                    //         legend: {
+                                    //             position: 'top',
+                                    //         },
+                                    //     },
+                                    //     scales: {
+                                    //         x: {
+                                    //             title: {
+                                    //                 display: true,
+                                    //                 text: 'Months'
+                                    //             }
+                                    //         },
+                                    //         y: {
+                                    //             title: {
+                                    //                 display: true,
+                                    //                 text: 'Values'
+                                    //             }
+                                    //         }
+                                    //     }
+                                    // }
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="horizontal-line"></div>
+
+                <!-- To-do, Activity  -->
+                <div id="activity-zone">
+                    <!-- TODO  -->
+                    <div class="todo">
+                        <div class="todo-search-tasks">
+                            <div class="task-assigned">
+                                <h2>To Do</h2>
+                                <p class="task-assigned-to-me">Task Assigned to me</p>
+                            </div>
+                            <div class="todo-tasks">
+                                <input type="text" class="search-tasks" name="" value="" placeholder="Search tasks">
+                                <p class="tasks-23">23 tasks</p>
+                                <p class="todo-sorting">Sorting</p>
+                            </div>
+                        </div>
+
+                        <div class="Procrastinate">
+                            <div class="on-progress">
+                                <div class="todo-tasks-checkbox">
+                                    <div>
+                                        <input type="checkbox" id="checkbox2" name="subscribe">
+                                        <label for="checkbox2"></label>
+                                    </div>
+                                    <div >
+                                        <p>Procrastinate for a month</p>
+                                        <p class="size-small">3 12Nov,2021 12:00PM</p>
+                                    </div>
+                                </div>
+                                <div class="progress-all">
+                                    <p class="progress-button">ON PROGRESS</p>
+                                </div>
+                            </div>
+                            <div class="horizontal-line"></div>
+                            <div class="on-progress">
+                                <div class="todo-tasks-checkbox">
+                                    <div>
+                                        <input type="checkbox" id="checkbox2" name="subscribe">
+                                        <label for="checkbox2"></label>
+                                    </div>
+                                    <div >
+                                        <p>Warming up</p>
+                                        <p class="size-small">3 12Nov,2021 12:00PM</p>
+                                    </div>
+                                </div>
+                                <div class="close">
+                                    <p class="close-button">CLOSE</p>
+                                </div>
+                            </div>
+                            <div class="horizontal-line"></div>
+                            <div class="todo-tasks-checkbox">
+                                <div>
+                                    <input type="checkbox" id="checkbox2" name="subscribe">
+                                    <label for="checkbox2"></label>
+                                </div>
+                                <div>
+                                    <p>Make ready for release</p>
+                                    <p class="size-small">22 20Nov,2021 01:00AM</p>
+                                </div>
+                            </div>
+                            <div class="horizontal-line"></div>
+                            <div class="todo-tasks-checkbox">
+                                <div>
+                                    <input type="checkbox" id="checkbox2" name="subscribe">
+                                    <label for="checkbox2"></label>
+                                </div>
+                                <div >
+                                    <p>Modify the Component</p>
+                                    <p class="size-small">4 22Nov,2021 01:00AM</p>
+                                </div>
+                            </div>
+                            <div class="horizontal-line"></div>
+                        </div>
+
+                        <div class="add-new-tasks">
+                            <p> + Add new task</p>
+                        </div>
+                    </div>
+
+                    <!-- Activity  -->
+                    <div class="activity-area">
+                        <div class="recent-activity">
+                            <h2>Activity</h2>
+                            <p class="recent-activity-across">Recent activity across all projects</p>
+                        </div>
+                        <div class="activity-steps">
+                            <div class="activity-step3">
+                                <div class="activity-steps-time">
+                                    <p class="activity-lorem">01 DEC, 2023</p>
+                                    <p class="activity-lorem">10:30 AM</p>
+                                </div>
+                                <div class="steps">
+                                    <p class="step123">Step 3</p>
+                                    <h4 class="steps-author">by <p class="author">Shantinon Mekalan</p></h4>
+                                    <p class="activity-lorem-ipsum">Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                </div>
+                            </div>
+                            <div class="activity-step3">
+                                <div class="activity-steps-time">
+                                    <p class="activity-lorem">05 DEC, 2023</p>
+                                    <p class="activity-lorem">12:30 AM</p>
+                                </div>
+                                <div class="steps">
+                                    <p class="step123">Step 2</p>
+                                    <h4 class="steps-author">by <p class="author">Bookworm22</p></h4>
+                                    <p class="activity-lorem-ipsum">Lorem ipsum is simply dummy text of the printing and
+                                        typesetting industry.</p>
+                                </div>
+                                <div class="vertical-line-steps"></div>
+                            </div>
+                            <div class="activity-step3">
+                                <div class="activity-steps-time">
+                                    <p class="activity-lorem">15 DEC, 2023</p>
+                                    <p class="activity-lorem">2:30 AM</p>
+                                </div>
+                                <div class="steps">
+                                    <p class="step123">Step 1</p>
+                                    <h4 class="steps-author">by <p class="author">Sharuka Nijibum</p></h4>
+                                    <p class="activity-lorem-ipsum">Lorem ipsum is simply dummy text of the printing and
+                                        typesetting industry.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="horizontal-line"></div>
+
+                <!-- Projects  -->
+                <div id="projects">
+                    <h2 class="projects-last">Projects</h2>
+                    <p class="brief-summary">Brief summary of all projects</p>
+                    <div class="horizontal-line"></div>
+                    <table class="table-last">
+                        <thead class="thead">
+                            <tr class="grey-text, table-horizontal-line">
+                                <th>Project Name</th>
+                                <th>Assignees</th>
+                                <th>Start Date</th>
+                                <th>Deadline</th>
+                                <th>Calculation</th>
+                                <th>Progress</th>
+                                <th>Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="grey-text">
+                                <td class="table-color">Making the Butterflies shoot each other dead</td>
+                                <td><i class="fa fa-users"></i></td>
+                                <td class="table-font">Dec 12, 2018</td>
+                                <td class="table-font">Dec 12, 2026</td>
+                                <td class="table-font">$4</td>
+                                <td class="table-font">
+                                    <div>
+                                        <div>145/146</div>
+                                        <div class="progress-bar"><span style="width: 50%;"></span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="god-bar-main-div">
+                                        <div class="god-bar" style="width: 25%; background-color: #ff4c4c;"></div>
+                                        <div class="god-bar" style="width: 25%; background-color: #ffb74c;"></div>
+                                        <div class="god-bar" style="width: 25%; background-color: #4caf50;"></div>
+                                        <div class="god-bar" style="width: 25%; background-color: #2196f3;"></div>
+                                    </div>
+                                </td>
+                                <td>---</td>
+                            </tr>
+                            <tr class="grey-text">
+                                <td class="table-color">Project Doughnut Dungeon</td>
+                                <td><i class="fa fa-users"></i></td>
+                                <td class="table-font">Jan 9, 2019</td>
+                                <td class="table-font">Dec 9, 2022</td>
+                                <td class="table-font, plus-button">+</td>
+                                <td class="table-font">
+                                    <div>
+                                        <div>148/223</div>
+                                        <div class="progress-bar"><span style="width: 40%;"></span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="god-bar-main-div">
+                                        <div class="god-bar" style="width: 15%; background-color: #ff4c4c;"></div>
+                                        <div class="god-bar" style="width: 35%; background-color: #ffb74c;"></div>
+                                        <div class="god-bar" style="width: 10%; background-color: #4caf50;"></div>
+                                        <div class="god-bar" style="width: 40%; background-color: #2196f3;"></div>
+                                    </div>
+                                </td>
+                                <td>---</td>
+                            </tr>
+                            <tr class="grey-text">
+                                <td class="table-color">The Chewing Gum Attack</td>
+                                <td><i class="fa fa-users"></i></td>
+                                <td class="table-font">Sep 4, 2019</td>
+                                <td class="table-font">Dec 4, 2021</td>
+                                <td class="table-font">$657k</td>
+                                <td class="table-font">
+                                    <div>
+                                        <div>277/539</div>
+                                        <div class="progress-bar"><span style="width: 80%;"></span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="god-bar-main-div">
+                                        <div class="god-bar" style="width: 25%; background-color: #ff4c4c;"></div>
+                                        <div class="god-bar" style="width: 15%; background-color: #ffb74c;"></div>
+                                        <div class="god-bar" style="width: 15%; background-color: #4caf50;"></div>
+                                        <div class="god-bar" style="width: 45%; background-color: #2196f3;"></div>
+                                    </div>
+                                </td>
+                                <td>---</td>
+                            </tr>
+                            <tr class="grey-text">
+                                <td class="table-color">Execution of Micky the faul mouse</td>
+                                <td><i class="fa fa-users"></i></td>
+                                <td class="table-font">Nov 1, 2019</td>
+                                <td class="table-font">Dec 1, 2024</td>
+                                <td class="table-font, plus-button">+</td>
+                                <td class="table-font">
+                                    <div>
+                                        <div>16/56</div>
+                                        <div class="progress-bar"><span style="width: 40%;"></span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="god-bar-main-div">
+                                        <div class="god-bar" style="width: 35%; background-color: #ff4c4c;"></div>
+                                        <div class="god-bar" style="width: 15%; background-color: #ffb74c;"></div>
+                                        <div class="god-bar" style="width: 35%; background-color: #4caf50;"></div>
+                                        <div class="god-bar" style="width: 15%; background-color: #2196f3;"></div>
+                                    </div>
+                                </td>
+                                <td>---</td>
+                            </tr>
+                            <tr class="grey-text">
+                                <td class="table-color">Harnessing stupidity from Jerry </td>
+                                <td><i class="fa fa-users"></i></td>
+                                <td class="table-font">Dec 28, 2019</td>
+                                <td class="table-font">Nov 28, 2021</td>
+                                <td class="table-font, plus-button">+</td>
+                                <td class="table-font">
+                                    <div>
+                                        <div>169/394</div>
+                                        <div class="progress-bar"><span style="width: 60%;"></span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="god-bar-main-div">
+                                        <div class="god-bar" style="width: 15%; background-color: #ff4c4c;"></div>
+                                        <div class="god-bar" style="width: 25%; background-color: #ffb74c;"></div>
+                                        <div class="god-bar" style="width: 30%; background-color: #4caf50;"></div>
+                                        <div class="god-bar" style="width: 30%; background-color: #2196f3;"></div>
+                                    </div>
+                                </td>
+                                <td>---</td>
+                            </tr>
+                            <tr class="grey-text">
+                                <td class="table-color">Water resistent mosquito killer gun</td>
+                                <td><i class="fa fa-users"></i></td>
+                                <td class="table-font">Feb 24, 2020</td>
+                                <td class="table-font">Nov 24, 2021</td>
+                                <td class="table-font">$55k</td>
+                                <td class="table-font">
+                                    <div>
+                                        <div>600/600</div>
+                                        <div class="progress-bar"><span style="width: 100%;"></span></div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="god-bar-main-div">
+                                        <div class="god-bar" style="width: 20%; background-color: #ff4c4c;"></div>
+                                        <div class="god-bar" style="width: 15%; background-color: #ffb74c;"></div>
+                                        <div class="god-bar" style="width: 25%; background-color: #4caf50;"></div>
+                                        <div class="god-bar" style="width: 40%; background-color: #2196f3;"></div>
+                                    </div>
+                                </td>
+                                <td>---</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="last-container">
+                        <div class="last-last">
+                            <p class="last-paragraph" class="grey-text">1 to 6 items of 6 </p>
+                            <div class="view-all">
+                               View all >
+                            </div>
+                        </div>
+                        <div class="page-num">
+                            <p class="smaller-than">&lt;</p>
+                            <div class="page-number">1</div>
+                            <p class="greater-than">&gt;</p>
+                        </div>
+                    </div>
+
+                    <div class="horizontal-line"></div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
